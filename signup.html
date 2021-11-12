@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<title>Sun and Moon Cafe</title>
+<link rel="stylesheet" href="styles.css" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script src= "script.js">
+</script>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+		<div class="logo">
+			<img src="images\logo1.jpg" alt="logo" class="logoimage" onclick="location.href='index.html'">
+		</div>
+		<div class="navbar_links">
+			<a href="index.html">Home</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="menu.html">Menu</a>
+			<a href="specials.html">Specials</a>
+			<a href="contactus.html">Contact Us</a>
+		</div>
+	</div> 
+<div class="signup"	>
+	<form name="myForm" action="action_page.php" onsubmit="return validateForm()" method="post"> 
+	<h1> Sign Up with our weekly newsletter</h1>
+		<label>First Name:</label><input type="text" placeholder="Enter First Name" name="fname" >
+		<label>Last Name:</label><input type="text" placeholder="Enter Last Name" name="lname">
+		<label>Email:</label><input type="text" placeholder="Enter Email Address" name="email" >
+		<label>Date Of Birth:</label><input type="date"  name="dob" >
+		<input type="radio" name="addlist[]" ><label>Get added to email list</label>
+	<h2>Select your favourite menu</h2>
+		<label><input type="checkbox" name="menu[]" value="French toast and bacon" >French toast and bacon</label>
+		<label><input type="checkbox" name="menu[]" value="Lamingtons">Lamingtons</label>
+		<label><input type="checkbox" name="menu[]" value="Gourmet Salads">Gourmet Salads</label>
+		<label><input type="checkbox" name="menu[]" value="Cheese Burger">Cheese Burger</label>
+		<label><input type="checkbox" name="menu[]" value="Sun & Moon Sandwhich">Sun & Moon Sandwhich</label>
+		<label><input type="checkbox" name="menu[]" value="Home style soup of the day">Home style soup of the day</label>
+		<input type="reset" class="cancelbtn">
+		<input type="submit" class="signupbtn">
+	</form>
+</div>
+<div class="footer">
+		<a href="index.html">Home</a>
+		<a href="aboutus.html">About Us</a>
+		<a href="menu.html">Menu</a>
+		<a href="specials.html">Specials</a>
+		<a href="contactus.html">Contact Us</a>
+		<a href="tel:0455 9999 555"> Contact: 0455 9999 555</a>
+		<a href="tel:0433 3333 999">Catering: 0433 3333 999</a>
+		<a href="http://maps.google.com/maps?q=223+Powell+St,+Bowen,+Queensland">Adress:223 Powell St,Bowen, Queensland</a>
+</div>
+</div>
+</body>
+</html>
